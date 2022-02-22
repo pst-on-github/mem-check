@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<RuleSet Name="StyleCop.Analyzers rules with default action" Description="StyleCop.Analyzers with default action. Rules with IsEnabledByDefault = false are disabled." ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.SpecialRules">
+    </Rules>
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.SpacingRules">
+        <Rule Id="SA1001"  Action="Warning" />          <!-- Commas should be spaced correctly -->
+        <Rule Id="SA1003"  Action="Warning" />          <!-- Symbols should be spaced correctly -->
+        <Rule Id="SA1005"  Action="Warning" />          <!-- Single line comments should begin with single space -->
+        <Rule Id="SA1009"  Action="Warning" />          <!-- Closing parenthesis should be spaced correctly -->
+        <Rule Id="SA1025"  Action="Warning" />          <!-- Code should not contain multiple whitespace in a row -->
+        <Rule Id="SA1028"  Action="Warning" />          <!-- Code should not contain trailing whitespace -->
+    </Rules>
+   
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.ReadabilityRules">
+        <Rule Id="SA1100"  Action="Warning" />          <!-- Do not prefix calls with base unless local implementation exists -->
+        <Rule Id="SA1101"  Action="None" />          <!-- Prefix local calls with this -->
+        <Rule Id="SA1107"  Action="Warning" />          <!-- Code should not contain multiple statements on one line -->
+        <Rule Id="SA1111"  Action="Warning" />          <!-- Closing parenthesis should be on line of last parameter -->
+        <Rule Id="SA1116"  Action="Warning" />          <!-- Split parameters should start on line after declaration -->
+        <Rule Id="SA1117"  Action="Warning" />          <!-- Parameters should be on same line or separate lines -->
+        <Rule Id="SA1118"  Action="Warning" />          <!-- Parameter should not span multiple lines -->
+        <Rule Id="SA1123"  Action="Warning" />          <!-- Do not place regions within elements -->
+        <Rule Id="SA1124"  Action="None" />          <!-- Do not use regions -->
+        <Rule Id="SA1136"  Action="Warning" />          <!-- Enum values should be on separate lines -->
+    </Rules>
+	
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.OrderingRules">
+        <Rule Id="SA1200"  Action="None" />          <!-- Using directives should be placed correctly -->
+        <Rule Id="SA1201"  Action="Warning" />          <!-- Elements should appear in the correct order -->
+        <Rule Id="SA1202"  Action="Warning" />          <!-- Elements should be ordered by access -->
+        <Rule Id="SA1204"  Action="Warning" />          <!-- Static elements should appear before instance elements -->
+        <Rule Id="SA1208"  Action="Warning" />          <!-- System using directives should be placed before other using directives -->
+    </Rules>
+
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.NamingRules">
+        <Rule Id="SA1306"  Action="Warning" />          <!-- Field names should begin with lower-case letter -->
+        <Rule Id="SA1309"  Action="None" />          <!-- Field names should not begin with underscore -->
+    </Rules>
+
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.MaintainabilityRules">
+        <Rule Id="SA1402"  Action="Warning" />          <!-- File may only contain a single type -->
+        <Rule Id="SA1413"  Action="None" />          <!-- Use trailing comma in multi-line initializers -->
+    </Rules>
+	
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.LayoutRules">
+        <Rule Id="SA1501"  Action="Warning" />          <!-- Statement should not be on a single line -->
+        <Rule Id="SA1502"  Action="Warning" />          <!-- Element should not be on a single line -->
+        <Rule Id="SA1503"  Action="Warning" />          <!-- Braces should not be omitted -->
+        <Rule Id="SA1504"  Action="Warning" />          <!-- All accessors should be single-line or multi-line -->
+        <Rule Id="SA1512"  Action="Warning" />          <!-- Single-line comments should not be followed by blank line -->
+        <Rule Id="SA1513"  Action="Warning" />          <!-- Closing brace should be followed by blank line -->
+        <Rule Id="SA1514"  Action="Warning" />          <!-- Element documentation header should be preceded by blank line -->
+        <Rule Id="SA1515"  Action="Warning" />          <!-- Single-line comment should be preceded by blank line -->
+        <Rule Id="SA1516"  Action="Warning" />          <!-- Elements should be separated by blank line -->
+    </Rules>
+	
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.DocumentationRules">
+        <Rule Id="SA1600"  Action="None" />          <!-- Elements should be documented -->
+        <Rule Id="SA1602"  Action="Warning" />          <!-- Enumeration items should be documented -->
+        <Rule Id="SA1623"  Action="Warning" />          <!-- Property summary documentation should match accessors -->
+        <Rule Id="SA1629"  Action="Warning" />          <!-- Documentation text should end with a period -->
+        <Rule Id="SA1633"  Action="None" />          <!-- File should have header -->
+        <Rule Id="SA1649"  Action="Error" />          <!-- File name should match first type name -->
+    </Rules>
+</RuleSet>
